@@ -3,21 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial scale=1">
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <!-- <title">Title</title>Counter -->
      
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
     </head>
     <body>
         <script src="main.js" defer></script> 
-        
-        <div class="page-wrapper">
-            <div class="topBox">Top Box</div>
-            <div class="leftColumn">Left Column</div>
-            <div class="mainBox">
-                <button type="button" class="btn btn-primary" id="countUp">
-                    Count up: <span class="badge badge-light">0</span>
-                </button> 
+
+        <div class="container-fluid">
+            <div class="page-header">
+                <h1>Simple counter</h1>
+            </div>
+            <div class="container"> 
+                <div class="jumbotron" id="counter">0</div>
+                <div class="button-group-vertical">
+                    <button type="button" class="btn btn-lg" id="countUp">+</button>
+                    <button type="button" class="btn btn-lg" id="countDown">-</button> 
+                </div>
             </div>
         </div>
     </body>

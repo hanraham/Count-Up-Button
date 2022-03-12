@@ -1,8 +1,15 @@
-var clicked = document.querySelector("#countUp");
+var countUp = document.querySelector("#countUp");
+var countDown = document.querySelector("#countDown");
+var counter = document.querySelector("#counter");
+
 var count = 0;
 
-console.log(clicked);
-clicked.onclick = function() {
+countUp.onclick = function() {
     count++;
-    clicked.innerText = "Count: " + count;
+    counter.innerText = count;
+}
+
+countDown.onclick = function() {
+    count--;
+    counter.innerText = count;
 }
